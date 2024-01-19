@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css">
+        <title> Portfolio Luc Sarrazin</title>
+    </head>
+    <body id="Background">
+
+        <div id="Projets">
+            <h1 style="color: white;">Mes Projets :</h1>
+            <h2 style="color: white;">Mon Premier Projets :</h2>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg" width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <h2 style="color: white;">Mon Deuxième Projets :</h2>
+            <p><a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a></p>
+            <h2 style="color: white;">Mon Troisième Projets :</h2>
+            <p><a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a>
+            <a><img src="87c93aa33275b4c8c73637ad3fbee836.jpg"width="19%"></a></p>
+        </div>
+        
+
+        <div class="blacksquare" id="blacksquare">
+        </div>
+
+       <script>
+        BlackSquare = document.getElementById("blacksquare");
+        Projet = document.getElementById("Projets");
+        BlackSquare.style.display = "none";
+        Projet.style.display = "none";
+
+        myFunction();
+        function myFunction(){
+            BlackSquare.style.display = "block";
+            setTimeout(myFunction2, 1000);
+        }    
+        
+
+        function myFunction2(){
+            BlackSquare.remove();
+            document.body.style.background = "black";
+            Projet.style.display = "block";
+
+        }
+       </script>
+    </body>
+</html>
