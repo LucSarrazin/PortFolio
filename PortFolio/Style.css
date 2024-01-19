@@ -1,0 +1,171 @@
+#Background{
+  transition:linear;
+  margin: 0%;
+  /*background: black;*/
+}
+.blacksquare{
+  background: black;
+  height: 27cm;
+  /*width: 50cm;*/
+  width: 100%;
+  animation: 1s animationTest;
+  z-index: 2;
+
+}
+
+#Intro {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+#Texte1 {
+  z-index: 1;
+    color: aquamarine;
+    animation: 3s animationTexte;
+}
+#body{
+  text-align: right;
+}
+#CenterMenu{
+  color: grey;
+  text-shadow: 7px 7px 12px grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#CenterMenu.child{
+  color: grey;
+}
+#BodyMenu{
+  margin: 0%;
+  margin-top: 0.7%;
+  margin-right: 60%;
+  text-align:justify;
+  animation: 9s MenuColor;
+}
+
+#Projets{
+  text-decoration: underline;
+  animation: 3s animationImages;
+}
+#BtsTexte1{
+  text-decoration: underline;
+  color: red;
+  animation: 1s animationTexte;
+  animation: 2s jello;
+}
+
+#BtsTexte2{
+  text-align:center;
+  animation: 1s animationTexte;
+}
+
+@keyframes animationTest {
+  0%{
+    transform: translateY(100%)
+  }
+  100%{
+    transform: translateY(0%)
+  }
+  
+}
+@keyframes animationTexte {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes animationImages {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+
+@keyframes MenuColor {
+  0%{
+      background: black;
+  }
+  49%{
+    background: black;
+  }
+  50%{
+    background: black;
+  }
+  60%{
+    background: white;
+  }
+  75%{
+    background: black;
+  }
+  100%{
+    background: black;
+  }
+}
+
+@keyframes hinge {
+  0% {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+20%, 60% {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-transform: rotate(80deg);
+    transform: rotate(80deg);
+}
+40%, 80% {
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0,700px,0);
+    transform: translate3d(0,700px,0);
+}
+}
+@keyframes jello {
+  0%, 11.1%, 100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+}
+33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+}
+44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+}
+55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+}
+66.6% {
+    -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
+    transform: skewX(-.78125deg) skewY(-.78125deg);
+}
+77.7% {
+    -webkit-transform: skewX(.390625deg) skewY(.390625deg);
+    transform: skewX(.390625deg) skewY(.390625deg);
+}
+88.8% {
+    -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
+    transform: skewX(-.1953125deg) skewY(-.1953125deg);
+}
+}
