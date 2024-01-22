@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+
 #Background{
   transition:linear;
   margin: 0%;
   /*background: black;*/
 }
 .blacksquare{
+  
+  max-width: 100%;
+  height: auto;
   background: black;
   height: 27cm;
   /*width: 50cm;*/
@@ -14,6 +20,8 @@
 }
 
 #Intro {
+  max-width: 100%;
+  height: auto;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -21,6 +29,7 @@
     min-height: 100%;
   }
 #Texte1 {
+  font-family: 'Aclonica', sans-serif;
   z-index: 1;
     color: aquamarine;
     animation: 3s animationTexte;
@@ -31,25 +40,33 @@
 #CenterMenu{
   color: grey;
   text-shadow: 7px 7px 12px grey;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+ /* font-family: Arial, Helvetica, sans-serif;*/
+ font-family: 'Aclonica', sans-serif;
+  font-size: 10px;
 }
 #CenterMenu.child{
   color: grey;
 }
 #BodyMenu{
+  font-family: 'Aclonica', sans-serif;
   margin: 0%;
   margin-top: 0.7%;
   margin-right: 60%;
   text-align:justify;
   animation: 9s MenuColor;
 }
-
+#TexteMenu:hover{
+  color: blue;
+  height: 10%;
+  width: 10%;
+}
 #Projets{
+  font-family: 'Aclonica', sans-serif;
   text-decoration: underline;
   animation: 3s animationImages;
 }
 #BtsTexte1{
+  font-family: 'Aclonica', sans-serif;
   text-decoration: underline;
   color: red;
   animation: 1s animationTexte;
@@ -57,8 +74,12 @@
 }
 
 #BtsTexte2{
+  font-family: 'Aclonica', sans-serif;
   text-align:center;
   animation: 1s animationTexte;
+}
+#CertificationImages{
+  border-radius: 10% 70% 38% 56% / 42% 42% 58% 33%;
 }
 
 @keyframes animationTest {
@@ -169,3 +190,18 @@
     transform: skewX(-.1953125deg) skewY(-.1953125deg);
 }
 }
+
+
+@media screen and (max-width: 700px){
+  #BodyMenu{
+    position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+}
+  
