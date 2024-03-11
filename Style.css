@@ -50,7 +50,7 @@
   font-family: 'Aclonica', sans-serif;
   margin: 0%;
   margin-top: 0.7%;
-  margin-right: 60%;
+  margin-right: 15%;
   text-align:justify;
   animation: 9s MenuColor;
 }
@@ -91,14 +91,17 @@
   border-radius: 10% 70% 38% 56% / 42% 42% 58% 33%;
 }
 
+#image1{
+  transition-duration: 0.5s;
+}
+/*
 #image1:hover{
-  
 position:fixed;
 top:0px;
 left:0px;
 width:100%;
 height :60%;
-}
+}*/
 
 @keyframes animationTest {
   0%{
